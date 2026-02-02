@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    width: 1280px;
+    margin: 5%;
+}
+
+body {
+    background-image: url("AdobeStock_286375793.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 55% 35% ;
+    grid-template-rows: repeat(1, min-content);
+    padding: 20px;
+}
+
+#company-logo {
+    width: 150px;
+    height: 150px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+header form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+header label {
+    font-size: 25px;
+}
+
+#search-bar {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+header input {
+    width: 600px;
+    height: 40px;    
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+}
+
+header button, #search-bar img {
+    width: 40px;
+    height: 40px;
+    border-color: black;
+}
+
+#menu {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu img {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+}
+
+h1,h2,#welcome h3 {
+    display: none;
+}
+
+nav {
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul {    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: sticky;
+    width: 100%;
+    text-align:center;
+    align-items: center;
+    
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#welcome {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#beenie-girl {
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+#welcome button {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: rgba(255, 0, 0, 0.72);
+    font-size: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+#about {
+    margin: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 15% 85%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#about h3 {
+    font-size: 50px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    align-content: center;
+}
+
+#about p {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    align-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#colors {
+    padding-top: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, min-content);
+    justify-content: center;
+    align-content: center;
+}
+
+#colors img {
+    width: 200px;
+    height: 200px;
+}
+
+#yellow {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#fuscia {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    align-content: center;
+}
+
+#purple {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-content: center;
+}
+
+#collections h3:first-of-type {
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+#summary h3 {
+    font-size: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#categories {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: repeat(3, min-content);
+    padding-bottom: 70px;
+    width: 70%;
+}
+
+#categories img {
+    width: 300px;
+    height: 300px;
+}
+
+#bucket {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#straw {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#cowboy {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#dad {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#beenie {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#snapback {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.product-info h4 {
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.product-info :nth-child(3) {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.product-info :nth-child(4) {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}
+
+.cart-add {
+    display: inline-flex;
+    padding-left: 100px;
+}
+
+.cart-add p {
+    padding-left: 10px;
+}
+
+#summary {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#summary h3{
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--med-gray);
+}
+
+#summary ul{
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 1.2rem;
+    list-style: none;
+}
+
+#summary li{
+	margin: 0.5rem 0;
+    list-style: none;
+}
+
+#cart-items li{
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid var(--med-gray);
+    list-style: none;
+}
+
+#checkout {
+	font-size: 20px;
+    padding: 5px;
+	margin-left: 100px;
+    border-radius: 12px;
+}
+
+#contact-social {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#contact h3, #social h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(1, min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+#contact h3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact h4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact-form {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: left;
+    font-size: 25px;
+}
+
+#fname, #lname {
+    padding-bottom: 20px; 
+}
+
+#fname input, #lname input {
+    height: 30px;
+    width: 500px; 
+}
+
+#number {
+    padding-bottom: 20px;
+}
+
+#number input {
+    height: 30px;
+    width: 500px; 
+}
+
+#email {
+    padding-bottom: 20px;
+}
+
+#email input {
+    height: 30px;
+    width: 500px; 
+}
+
+#feedback {
+    padding-bottom: 20px;
+    height: 200px;
+    width: 500px;
+}
+
+#feedback input {
+    height: 150px;
+    width: 500px; 
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 110px;
+    padding-bottom: 20px;
+}
+
+.submit {
+    align-content: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 100px;
+    width: 300px;
+}
+
+#social {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    align-content: center;
+    justify-content: center;
+
+    
+}
+
+#social-media h4 {
+    text-align: center;
+
+}
+
+#social-icons {  
+    margin-top: 20px;
+}
+
+#social-icons #facebook, #social-icons #pinterest, #social-icons #etsy  {
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+}
+
+#social-icons #instagram {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
